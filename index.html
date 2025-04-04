@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List App</title>
+  <link rel="stylesheet" href="static/style/style.css">
+</head>
+<body>
+  <main>
+    <section>
+      <div class="info_container">
+        <span class="info_task_box">
+          <h2 class="info_title">Completed:</h2>
+          <p class="numb comp_count"></p>
+        </span>
+        <span class="info_task_box">
+          <h2 class="info_title">Task:</h2>
+          <p class="numb task_count"></p>
+        </span>
+      </div>
+
+      <div class="input_container">
+        <input class="task_input" type="text">
+        <button class="add_btn">
+          <span class="btn_sign">
+            <p class="width_sign"></p>
+            <p class="height_sign"></p>
+          </span>
+        </button>
+        <p class="error_msg"></p>
+      </div>
+
+      <div class="result_container">
+        <div class="control_box">
+          <button class="btn complete_btn" data-text="Complete All">Complete All</button>
+          <button class="btn delete_btn" data-text="Delete All">Delete All</button>
+        </div>
+        <p class="task_msg">No tasks to show</p>
+        <ul class="tasks_list"></ul>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="copy_right">
+      <p>&copy; 2025 <span>Mazen Hashem</span> All Right Reserved</p>
+    </div>
+  </footer>
+  
+  <script src="dynamic/index.js"></script>
+</body>
+</html>
